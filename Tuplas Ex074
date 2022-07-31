@@ -1,6 +1,10 @@
 from random import randint
 numbers = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), 
            randint(1, 10), randint(1, 10), )
-print(numbers)
-print(f'O menor número da tupla é: {min(numbers)}')
+
+print('Os números sorteados foram: ', end='')
+for n in numbers:
+  print(f'{n} ', end='')
+
+print(f'\nO menor número da tupla é: {min(numbers)}')
 print(f'O maior número da tupla é: {max(numbers)}')
