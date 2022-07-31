@@ -1,6 +1,7 @@
 classificacao = ('Vasco', 'Flamengo', 'Fluminense', 'Botafogo', 'Chapecoense', 
                  'Santos', 'Coritiba', 'Palmeiras', 'Cruzeiro', 'Madureira',
                  'São Caetano', 'América', 'Paraná')
+
 ordemAlfa = sorted(classificacao)
 
 print(f'\nOs cinco primeiros são: {classificacao[:4]}')
@@ -9,8 +10,9 @@ print(f'\nOs cinco últimos são: {classificacao[-4:]}')
 for posicao, time in enumerate(classificacao):
   if time == 'Chapecoense':
     print(f'\nA {time} está na {posicao + 1}ª posição na classificação!')
+# Tem outro modo de descobrir a posição do time escolhido
+print(f'\nA Chape está na {classificacao.index("Chapecoense")+1}ª posição da tabela!')
 
 print(f'\nOs times em ordem alfabética:')
 for c in ordemAlfa:
   print(c)
-  
