@@ -11,6 +11,9 @@ else:
   print('O valor 3 não foi digitado em nenhuma posição.')
 print('Os valores pares digitados foram: ', end='')
 if values:
-  for n in values:
+  for n in values: 
+    # 'n' vezes o número de índices q tiver na tupla 'values'
     if n % 2 == 0:
+      # descobre os números pares na tupla 'values'
       print(f'{n} ', end='')
+      
