@@ -1,0 +1,25 @@
+lista = list()
+listaMaiores = []
+listaMenores = []
+
+def criaLista():
+    for posicao in range(0, 5):
+            # um laço de 0 à 5, recebendo valores a cada vez
+        lista.append(int(input(f'Digite um valor na posição {posicao}: ')))
+            # recebe valores 5 vezes
+
+
+def listandoMaiores_Menores():
+    for posicao, valores in enumerate(lista):
+        if valores == max(lista):
+            listaMaiores.append(posicao)
+        if valores == min(lista):
+            listaMenores.append(posicao)
+
+
+criaLista()
+listandoMaiores_Menores()
+
+print(f'Você digitou os valores {lista}')
+print(f'O maior valor da lista é {max(lista)}, nas posições {listaMaiores}')
+print(f'O menor valor da lista é {min(lista)}, nas posições {listaMenores}')
