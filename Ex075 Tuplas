@@ -7,6 +7,8 @@ if 9 in values:
   print(f'O número nove foi digitado {values.count(9)} vez(es).')
 if 3 in values:
   print(f'O número 3 está na {values.index(3)+1}ª posição.')
+else:
+  print('O valor 3 não foi digitado em nenhuma posição.')
 print('Os valores pares digitados foram: ', end='')
 if values:
   for n in values:
