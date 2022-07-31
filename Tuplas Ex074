@@ -1,0 +1,6 @@
+from random import randint
+numbers = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), 
+           randint(1, 10), randint(1, 10), )
+print(numbers)
+print(f'O menor número da tupla é: {min(numbers)}')
+print(f'O maior número da tupla é: {max(numbers)}')
