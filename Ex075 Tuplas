@@ -1,0 +1,14 @@
+# EX 075
+values = (int(input('Digite um número: ')), int(input('Digite outro número: ')),
+          int(input('Digite mais um número: ')), 
+          int(input('Digite o último número: ')))
+print(f'\nOs valores digitados foram: {values}')
+if 9 in values:
+  print(f'O número nove foi digitado {values.count(9)} vez(es).')
+if 3 in values:
+  print(f'O número 3 está na {values.index(3)+1}ª posição.')
+print('Os valores pares digitados foram: ', end='')
+if values:
+  for n in values:
+    if n % 2 == 0:
+      print(f'{n} ', end='')
